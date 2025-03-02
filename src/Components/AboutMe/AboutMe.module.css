@@ -12,6 +12,7 @@
     position:relative;
     bottom: 150px;
     left: 120px;
+    
 }
 .main{
     display: flex;
@@ -111,4 +112,25 @@
 .name{
     font-size: 25px;
     font-weight: bold;
+}
+@media (max-width:1000px){
+    .mainBody{
+        flex-direction: column;
+        height: auto;
+        margin-right: 200px;
+        
+    }
+    .main{
+        margin-bottom: 500px;
+    }
+    .span3{
+        
+    }
+    .content{
+        position: relative;
+        top: 200px;
+        right: 50px;
+    }
+   
+    
 }

@@ -18,9 +18,18 @@
 }
 
 .testimonialGrid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr; /* Default: 1 column for small screens */
     gap: 20px;
-    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* For larger screens (min-width: 768px), switch to 2 columns */
+@media (min-width: 768px) {
+    .testimonialGrid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
 }
 
 .testBody {

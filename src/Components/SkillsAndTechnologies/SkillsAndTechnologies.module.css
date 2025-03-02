@@ -1,78 +1,150 @@
+/* Carousel Container */
 .carouselContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 75%;
-    overflow: hidden;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 10px;
+}
+
+/* Title */
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Carousel Wrapper */
+.carouselWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Carousel */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+/* Marquee Effect */
+.marquee {
+  display: flex;
+  gap: 20px;
+  min-width: 200%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Row Animations */
+.row1 {
+  animation: scrollLeft 10s linear infinite;
+}
+
+.row2 {
+  animation: scrollRight 12s linear infinite;
+}
+
+@keyframes scrollLeft {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0%); }
+}
+
+/* Elements Inside the Carousel */
+.imgel {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Element Body */
+.elBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 50px;
+  white-space: nowrap;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+/* === Responsive Design === */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .carouselContainer {
+      width: 95%;
   }
-  
+
   .title {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    border-radius: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: bold;
+      font-size: 1.5rem;
   }
-  
-  
-  .carouselWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .carousel {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-  }
-  
-  .marquee {
-    display: flex;
-    gap: 20px;
-    min-width: 200%;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-  
-  .row1 {
-    animation: scrollLeft 10s linear infinite;
-  }
-  
-  .row2 {
-    animation: scrollRight 12s linear infinite;
-  }
-  
-  @keyframes scrollLeft {
-    from { transform: translateX(0%); }
-    to { transform: translateX(-50%); }
-  }
-  
-  @keyframes scrollRight {
-    from { transform: translateX(-50%); }
-    to { transform: translateX(0%); }
-  }
-  
+
   .imgel {
-    width: 25px;
-    height: 25px;
+      width: 35px;
+      height: 35px;
   }
-  
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .carouselContainer {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .title {
+      font-size: 1.3rem;
+      padding: 8px 15px;
+  }
+
+  .carouselWrapper {
+      gap: 10px;
+  }
+
+  .imgel {
+      width: 30px;
+      height: 30px;
+  }
+
   .elBody {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 50px;
-    white-space: nowrap;
+      padding: 8px 12px;
   }
-  
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .title {
+      font-size: 1.1rem;
+      padding: 5px 10px;
+  }
+
+  .imgel {
+      width: 25px;
+      height: 25px;
+  }
+
+  .elBody {
+      padding: 5px 10px;
+  }
+}
