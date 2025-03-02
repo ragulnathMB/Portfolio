@@ -1,0 +1,58 @@
+.testimonialContainer {
+    width: 70%;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonialScrollContainer {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+    padding-bottom: 10px;
+}
+
+.testimonialGrid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.testBody {
+    display: inline-block;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    min-height: 150px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    flex: 0 0 auto;
+    border-bottom: 10px solid gray;
+    transition: transform 0.5s ease;
+}
+
+.imgTest {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: wheat;
+}
+
+.desc {
+    margin-top: 10px;
+}
+.title{
+    border-radius: 50px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.testBody:hover{
+    transform: scale(1.09);
+}

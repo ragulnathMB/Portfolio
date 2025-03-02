@@ -1,0 +1,7 @@
+.mainBody{
+    width: 100vw;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+}

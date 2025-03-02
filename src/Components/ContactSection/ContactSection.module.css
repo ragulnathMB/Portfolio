@@ -1,0 +1,85 @@
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    width: 70vw;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socialBody{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.bmc{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.socialItems{
+    padding: 5px;
+    border-radius: 3px;
+}
+.contactInfo {
+    margin-bottom: 20px;
+}
+
+.contactInfo a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+.messageForm{
+    margin-right: 10px;
+}
+.messageForm h3 {
+    margin-bottom: 10px;
+}
+
+.inputField,
+.textArea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.textArea {
+    height: 100px;
+    resize: none;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to right,red,rgb(0, 174, 255));
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    opacity: 0.8;
+}
+@media (max-width:570px){
+    .contactContainer{
+        flex-direction: column;
+    }
+}
