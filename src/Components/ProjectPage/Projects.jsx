@@ -60,7 +60,7 @@ const Project = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/projects') // Replace with actual API
+        axios.get('https://portfolio-rl6m.onrender.com/projects') // Replace with actual API
             .then(response => {
                 const filteredProjects = response.data.filter(proj => parseInt(proj.priority) >= 1 && parseInt(proj.priority) <= 4);
                 setProjects(filteredProjects);

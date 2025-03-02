@@ -12,7 +12,7 @@ const Experience = () => {
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/experience"); // Replace with your actual API URL
+        const response = await axios.get("https://portfolio-rl6m.onrender.com/experience"); // Replace with your actual API URL
         setExperiences(response.data);
       } catch (err) {
         setError("Failed to load experience data");

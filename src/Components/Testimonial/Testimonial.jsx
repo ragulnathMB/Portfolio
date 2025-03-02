@@ -26,7 +26,7 @@ const Testimonial = () => {
     const {theme}=useTheme();
 
     useEffect(() => {
-        axios.get('http://localhost:5000/testimonials')
+        axios.get('https://portfolio-rl6m.onrender.com/testimonials')
             .then(response => setTestimonials(response.data))
             .catch(error => console.error('Error fetching testimonials:', error));
     }, []);

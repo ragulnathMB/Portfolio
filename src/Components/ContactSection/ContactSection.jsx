@@ -23,7 +23,7 @@ const ContactSection = forwardRef((props,ref) => {
         e.preventDefault();
         console.log("click")
         try {
-            const response = await axios.post('http://localhost:5000/send-email', formData);
+            const response = await axios.post('https://portfolio-rl6m.onrender.com/send-email', formData);
             setStatus(response.data.message);
         } catch (error) {
             setStatus('Failed to send message');

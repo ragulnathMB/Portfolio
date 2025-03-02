@@ -31,7 +31,7 @@ const SkillsAndTechnologies = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/skills")
+      .get("https://portfolio-rl6m.onrender.com/skills")
       .then((response) => {
         setSkills(response.data);
       })
