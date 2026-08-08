@@ -3,8 +3,16 @@ import styles from './AboutMe.module.css'
 import profile from '../../assets/profileImg.png'
 import profileBorder from '../../assets/profileBorder.png'
 
-const AboutMe=()=>{
+const AboutMe=({contactRef})=>{
     const {theme}=useTheme();
+    const handleContactClick = () => {
+        if (contactRef?.current) {
+            console.log("Scrolling to ContactSection..."); // Debugging
+            contactRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+          } else {
+            console.log("contactRef is null or undefined!"); // Debugging
+          }
+      };
     return (
         <div className={styles.main}>
             <div className={styles.span1}><div className={styles.span2}></div></div>
@@ -18,7 +26,7 @@ const AboutMe=()=>{
 I'm also exploring areas like graphics programming and AI. I like working on projects that are both challenging and meaningful.
                 </p>
                 </div>
-                <div><p>I am open to exciting opportunities and collaborations on innovative projects. Let’s create something amazing together! <a>Contact Me</a></p></div>
+                <div><p>I am open to exciting opportunities and collaborations on innovative projects. Let’s create something amazing together! <a onClick={()=>{handleContactClick();}}>Contact Me</a></p></div>
             </div>
             <div className={styles.imgContainer}>
                 <img className={styles.imgB} src={profileBorder}/>

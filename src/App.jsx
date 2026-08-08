@@ -31,7 +31,7 @@ function MainComponent() {
     <div style={{ backgroundColor: theme === 'Dark' ? 'black' : 'white' }} className="main">
       <Navbar contactRef={contactRef} homeRef={homeRef}/>
       <HeroSection ref={homeRef}/>
-      <AboutMe />
+      <AboutMe contactRef={contactRef} />
       <SkillsAndTechnologies />
       <Project/>
       <Experience />
