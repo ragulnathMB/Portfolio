@@ -35,7 +35,6 @@ function MainComponent() {
       <SkillsAndTechnologies />
       <Project/>
       <Experience />
-      <Testimonial />
       <ContactSection ref={contactRef}/>
       <Footer />
     </div>
