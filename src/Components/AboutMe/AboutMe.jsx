@@ -26,7 +26,7 @@ const AboutMe=({contactRef})=>{
 I'm also exploring areas like graphics programming and AI. I like working on projects that are both challenging and meaningful.
                 </p>
                 </div>
-                <div><p>I am open to exciting opportunities and collaborations on innovative projects. Let’s create something amazing together! <a onClick={()=>{handleContactClick();}}>Contact Me</a></p></div>
+                <div><p>I am open to exciting opportunities and collaborations on innovative projects. Let’s create something amazing together! <a style={{cursor:'pointer',color:'blue'}} onClick={()=>{handleContactClick();}}>Contact Me</a></p></div>
             </div>
             <div className={styles.imgContainer}>
                 <img className={styles.imgB} src={profileBorder}/>
