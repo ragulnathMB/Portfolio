@@ -13,11 +13,12 @@ const AboutMe=()=>{
                 <div><p className={styles.name}>Ragulnath M B</p></div>
                 <div><p style={{fontWeight:900}}>About Me</p></div>
                 <div>
-                <p>Hi, I’m a passionate developer with a deep interest in programming and emerging technologies. I thrive on solving real-world problems and transforming imaginative ideas into reality through code. With experience in Web Development, Augmented Reality, and Machine/Deep Learning,
-                     I have worked on projects that blend innovation with practicality. My goal is to create cutting-edge solutions that drive technology forward and make a meaningful impact.
+                <p>I am a Computer Science Engineering student at NIT Puducherry , with a strong interest in backend development and full-stack projects. I enjoy learning by building, whether it's web apps, backend systems, or experimenting with new tools.
+
+I'm also exploring areas like graphics programming and AI. I like working on projects that are both challenging and meaningful.
                 </p>
                 </div>
-                <div><p>I’m open to exciting opportunities and collaborations on innovative projects. Let’s create something amazing together! <a>Contact Me</a></p></div>
+                <div><p>I am open to exciting opportunities and collaborations on innovative projects. Let’s create something amazing together! <a>Contact Me</a></p></div>
             </div>
             <div className={styles.imgContainer}>
                 <img className={styles.imgB} src={profileBorder}/>
